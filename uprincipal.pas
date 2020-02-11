@@ -134,6 +134,13 @@ end;
 
 procedure TFormPrincipal.MenuItemSairClick(Sender: TObject);
 begin
+  if modificado then
+  begin
+    if MessageDlg('Sair', 'O Arquivo foi modificado. ' + #13 +
+      'Deseja salvar o documento?', mtConfirmation, mbYesNo, '') = mrYes then
+      MenuItemSalvar.Click;
+  end;
+
   Application.Terminate;
 end;
 

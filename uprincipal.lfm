@@ -1,7 +1,7 @@
 object FormPrincipal: TFormPrincipal
-  Left = 292
+  Left = 312
   Height = 400
-  Top = 164
+  Top = 144
   Width = 600
   Caption = 'Editor de Texto Simples'
   ClientHeight = 377
@@ -158,6 +158,7 @@ object FormPrincipal: TFormPrincipal
         Text = 'Versão 1.0'
         Width = 50
       end>
+    ParentFont = False
     SimplePanel = False
   end
   object ToolBar1: TToolBar
@@ -264,6 +265,7 @@ object FormPrincipal: TFormPrincipal
     ClientWidth = 600
     Color = clWhite
     ParentColor = False
+    ParentFont = False
     TabOrder = 2
     object MemoTexto: TMemo
       Left = 5
@@ -274,6 +276,7 @@ object FormPrincipal: TFormPrincipal
       BorderSpacing.Around = 5
       BorderStyle = bsNone
       OnChange = MemoTextoChange
+      ParentFont = False
       ScrollBars = ssAutoVertical
       TabOrder = 0
     end
